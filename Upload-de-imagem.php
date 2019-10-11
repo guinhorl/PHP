@@ -19,10 +19,10 @@ if (isset($_POST['enviarFoto'])) {
                         header('Location: ../perfil.php');
                     }
                 }
-                $_SESSION['mensagem'] = "<div class='alert alert-danger m-2'> ERRO NO DOWNLOAD!! </div>";
+                $_SESSION['mensagem'] = "<div class='alert alert-danger m-2'> ERRO AO CARREGAR!! </div>";
                 header('Location: ../perfil.php');
             } else {
-                $_SESSION['mensagem'] = "<div class='alert alert-danger m-2'> ERRO NO DOWNLOAD!! </div>";
+                $_SESSION['mensagem'] = "<div class='alert alert-danger m-2'> ERRO AO CARREGAR!! </div>";
                 header('Location: ../perfil.php');
             }
         } else {
